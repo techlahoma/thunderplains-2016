@@ -9,15 +9,17 @@
 ## :zap: [Thunder Plains 2016](http://2016.thunderplainsconf.com) :zap:
 Our conference is a 2 day 1 track community-run event at the Devon Boathouse in Oklahoma City, OK
 
-### :ticket: Purchase a Ticket
-Tickets shall be on sale soon!
+### :ticket: Tickets
+Tickets shall be on sale after the CFP closes!  
 
-Type         | Price | About
------------- | ----- | -------------------------------------------------
-Lightning    | 99    | The first 30, these go fast!
-Thunder      | 150   | Through Aug 31
-Regular Pass | 175   | Through nov 2nd
-Herd         | 135   | This is for groups larger than 5, through Nov 2nd
+Stay Tuned for announcements.
+
+Type         | About
+------------ | -------------------------------------------------
+Lightning    | The first 30, these go fast!
+Thunder      | Through Aug 31
+Regular Pass | Through Nov 2nd
+Herd         | This is for groups larger than 5, through Nov 2nd
 
 Tickets include food/snacks/non-alcoholic drinks at lunch time snack break and at the optional after party. (After party attendance is completely optional and not required.)
 
