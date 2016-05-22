@@ -30,6 +30,7 @@ h1, h2, h3, h4
 h2
   font-family: $font-headers
   text-transform: uppercase
+
 h3
   font-family: $font-subheaders
 a, a:hover
@@ -103,14 +104,19 @@ header
     margin-top: -1*185px
     left: 50%
     margin-left: -1*355px
+    h2,h3,li
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6)
+
     @media only screen and (max-height: 800px)
       margin-top: -1*215px
     @media only screen and (max-height: 600px)
       margin-top: -1*250px
       h2
         font-size: 35px
+
       h3
         font-size: 25px
+
       .cfp
         margin: 0
     @media only screen and (max-height: 500px)
@@ -142,6 +148,7 @@ header
     text-transform: uppercase
     line-height: 60px
     margin-bottom: 0
+
     @media only screen and (max-width: $break-small)
       font-size: 20px
       line-height: 30px
@@ -684,7 +691,7 @@ footer
 .cfp
   a
     font-family Sanchez,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
-    background-color:#b27d97;
+    background-color:$purple-light;
     display:block;
     color:#fff;
     padding: 25px;
@@ -699,10 +706,10 @@ footer
     transition 400ms ease
     opacity 1
     &:hover
-      color:#b27d97 !important;
+      color:$purple-light !important;
       padding: 25px;
       font-size: 45px;
-      border-color: #b27d97
+      border-color: $purple-light
       background-color:  #fff
     @media only screen and (max-height: 800px)
       font-size: 22px;
