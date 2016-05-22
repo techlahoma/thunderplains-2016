@@ -43,7 +43,7 @@ a, a:hover
 
 a:hover
   opacity: 1
-  color: $blue-light !important
+  color: $blue-light
 
 
 strong
@@ -78,6 +78,11 @@ section
   li
     display: inline-block
 // Sections
+
+
+
+
+
 header
   //background: $blue-dark url("../images/header-gradient.png") center bottom repeat-x
   //background-attachment: fixed
@@ -85,6 +90,10 @@ header
   color: white
   position: relative
   z-index: 1
+
+  h2,h3,li
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6)
+
   @media only screen and (max-width: $break-small)
     //background-size: 1px 500px
     //background-attachment: scroll
@@ -105,8 +114,7 @@ header
     left: 50%
     margin-left: -1*512px
     padding 20px
-    h2,h3,li
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6)
+
 
     @media only screen and (max-height: 800px)
       margin-top: -1*215px
@@ -184,8 +192,9 @@ header
       @media only screen and (max-width: $break-medium)
         display: none
     a, a:hover
-      color: white
+      color: #fff !important
       text-transform: uppercase
+      text-shadow 1px 0px 10px #fff
   .scroll-hint
     text-replace("../images/chevron-down.png", 25px, 10px)
     @media all and (-webkit-min-device-pixel-ratio: 1.5)
@@ -201,6 +210,9 @@ header
   text-align: center
   color: white
   font-size: 20px
+  &:hover
+    color #fff !important
+    text-shadow 1px 0px 10px #fff
 
 .cfp-cta
   position: absolute
@@ -210,6 +222,11 @@ header
   text-align: center
   color: white
   font-size: 20px
+  &:hover
+    color #fff !important
+    text-shadow 1px 0px 10px #fff
+
+
 
 #speakers
   .speakers-list
