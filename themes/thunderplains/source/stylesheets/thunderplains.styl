@@ -58,7 +58,7 @@ section
   padding: 100px 0
 .container
   @media only screen and (max-width: $break-small)
-    padding: 50px 20px
+    padding: 0px 0px
 .section-title
   font-size: 50px
   line-height: 60px
@@ -117,15 +117,13 @@ header
 
 
     @media only screen and (max-height: 800px)
-      margin-top: -1*215px
+      top: 50%
     @media only screen and (max-height: 600px)
-      margin-top: -1*250px
+      top: 50%
       h2
         font-size: 35px
-
       h3
         font-size: 25px
-
       .cfp
         margin: 0
     @media only screen and (max-height: 500px)
@@ -225,7 +223,8 @@ header
   &:hover
     color #fff !important
     text-shadow 1px 0px 10px #fff
-
+  @media only screen and (max-width: $break-small)
+    top: 90px
 
 
 #speakers
