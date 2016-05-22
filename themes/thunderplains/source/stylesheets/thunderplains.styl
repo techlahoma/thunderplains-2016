@@ -194,6 +194,15 @@ header
   color: white
   font-size: 20px
 
+.cfp-cta
+  position: absolute
+  top: 65px
+  left: 0
+  right: 0
+  text-align: center
+  color: white
+  font-size: 20px
+
 #speakers
   .speakers-list
     @extend .list-simple
@@ -670,30 +679,37 @@ footer
   img
     max-width: 250px
 
+
+
 .cfp
-  background-color:#b27d97;
-  display:block;
-  color:#fff;
-  padding: 25px;
-  font-size: 45px;
-  line-height: 1em;
-  margin: 45px auto;
-  border-radius:20px;
-  border:1px white solid;
-  text-shadow:#C17C3A 0 -1px 0;
-  width: 100%
-  &:hover
+  a
+    font-family Sanchez,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+    background-color:#b27d97;
+    display:block;
+    color:#fff;
     padding: 25px;
     font-size: 45px;
-    color: #b27d97;
-    border-color: #b27d97
-    background-color:  #fff
-  @media only screen and (max-height: 800px)
-    font-size: 22px;
-    padding: 14px;
+    line-height: 1em;
+    margin: 45px auto;
+    border-radius:20px;
+    border:1px white solid;
+    text-shadow:#C17C3A 0 -1px 0;
+    max-width 600px
+    min-width 300px
+    transition 400ms ease
+    opacity 1
     &:hover
-     font-size: 22px;
-     padding: 14px;
+      color:#b27d97 !important;
+      padding: 25px;
+      font-size: 45px;
+      border-color: #b27d97
+      background-color:  #fff
+    @media only screen and (max-height: 800px)
+      font-size: 22px;
+      padding: 14px;
+      &:hover
+       font-size: 22px;
+       padding: 14px;
 
 .videoplayer
   position: relative;
