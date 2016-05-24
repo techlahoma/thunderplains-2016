@@ -6,7 +6,7 @@
 
 --------------------------------------------------------------------------------
 
-## :zap: [Thunder Plains 2016](http://2016.thunderplainsconf.com) :zap:
+## :zap: [Thunder Plains 2016](http://thunderplainsconf.com) :zap:
 Our conference is a 2 day 1 track community-run event at the Devon Boathouse in Oklahoma City, OK
 
 ### :ticket: Tickets
