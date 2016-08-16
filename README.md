@@ -1,8 +1,6 @@
 # Thunder Plains Developer Conference 2016
 ![Thunderplains Banner](./readme/banner_2016.png)
 
-# [CFP IS OPEN!](http://cfp.thunderplainsconf.com/)
-[![SUBMIT YOUR TALK](./readme/cfp.jpg)](http://cfp.thunderplainsconf.com/)
 
 --------------------------------------------------------------------------------
 
