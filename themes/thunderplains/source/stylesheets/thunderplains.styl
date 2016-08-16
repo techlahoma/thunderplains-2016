@@ -286,21 +286,16 @@ header
         width: 1em
         vertical-align: middle
         margin: (-0.2em) 0.5em 0 0
-      &.legend-room1
-        &:before
-          background: $purple-dark
-        &:hover:before
-          background: saturate($purple-dark, $hoverSaturate)
-      &.legend-room2
-        &:before
-          background: $purple-light
-        &:hover:before
-          background: saturate($purple-light, $hoverSaturate)
-      &.legend-room3
+      &.legend-day1
         &:before
           background: $orange
         &:hover:before
           background: saturate($orange, $hoverSaturate)
+      &.legend-day2
+        &:before
+          background: $purple-light
+        &:hover:before
+          background: saturate($purple-light, $hoverSaturate)
   .schedule-list
     @extend .list-simple
     border: 1px solid $creme
@@ -368,25 +363,7 @@ header
       border-left: 5px solid $creme
       padding: 15px 20px 15px 10px
       transition: all $hoverReactSpeed ease
-      &.schedule-room1
-        border-left-color: $purple-dark
-        &:hover
-        &.hover
-          border-left-color: saturate($purple-dark, $hoverSaturate)
-          background-color:  desaturate(lighten($purple-dark, $hoverBackgroundLighten), $hoverDesaturateBack)
-          .schedule-title h3
-            color: saturate(darken($purple-dark, $hoverDarkenFont), $hoverSaturateFont)
-            text-shadow: $hoverTextShadow
-      &.schedule-room2
-        border-left-color: $purple-light
-        &:hover
-        &.hover
-          border-left-color: saturate($purple-light, $hoverSaturate)
-          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
-          .schedule-title h3
-            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
-            text-shadow: $hoverTextShadow
-      &.schedule-room3
+      &.schedule-day1
         border-left-color: $orange
         &:hover
         &.hover
@@ -394,6 +371,15 @@ header
           background-color:  desaturate(lighten($orange, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3
             color: saturate(darken($orange, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow
+      &.schedule-day2
+        border-left-color: $purple-light
+        &:hover
+        &.hover
+          border-left-color: saturate($purple-light, $hoverSaturate)
+          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3
+            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
             text-shadow: $hoverTextShadow
       &.no-modal
         cursor: default
@@ -403,7 +389,7 @@ header
       .schedule-slot
         .schedule-talk
           float: left
-          width: 33.3%
+          width: 50%
           height: 105px
 .schedule-talk
   .schedule-title
@@ -489,6 +475,12 @@ header
     p
        font-size: 16px
        text-align: justify;
+
+
+
+
+
+
 
 #passes
   .passes-list

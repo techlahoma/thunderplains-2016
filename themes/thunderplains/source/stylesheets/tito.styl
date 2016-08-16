@@ -52,7 +52,7 @@ $calculated-padding = ($entryHeight - $font-size-body) * 0.5
     -o-column-span: all; /* Opera */
     .form-horizontal
       margin: 7px
-      
+
 .tito-ticket-name-wrapper
   height $entryHeight
   border-bottom $divider
@@ -247,7 +247,17 @@ $input-font-size = 16px
   margin-top -90px
   @media only screen and (max-width: $break-small)
     margin-top -19px
-  
+
+
+.tito-ticket-quantity-field[type="checkbox"]
+  background-color #fff
+  border 1px solid $purple-light
+  color: $purple-light
+
+.tito-ticket-quantity-field[type="checkbox"]:checked
+  background-color #fff
+  border 1px solid $purple-light
+  color $purple-light
 
 .tito-submit
   background: desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
