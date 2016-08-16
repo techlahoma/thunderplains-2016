@@ -18,12 +18,8 @@ p Click on any schedule item to see details about the talk.
   .schedule-time
     time 9:30am-10:30am
   .schedule-slot
-    .schedule-talk.schedule-day1
-      .schedule-title
-        h3 Women in Tech Panel
-    .schedule-talk.schedule-day2
-      .schedule-title
-        h3 Civic Hacking Panel
+    include ./speakers/women-in-tech-panel/entry.jade
+    include ./speakers/civic-hacking-panel/entry.jade
   .schedule-time
     time 10:30am-11:30am
   .schedule-slot
@@ -58,18 +54,4 @@ p Click on any schedule item to see details about the talk.
     time 5:00pm-6:00pm
   .schedule-slot
     include ./speakers/kassandra-perch/entry.jade
-    include ./speakers/example/entry.jade
-  .schedule-time
-    time 6:00pm-7:30pm
-  .schedule-event
-    p
-      | Break
-  .schedule-time
-    time 7:30pm - ?
-  .schedule-slot
-    .schedule-talk.schedule-day1
-      .schedule-title
-        h3 Speaker Dinner
-    .schedule-talk.schedule-day2
-      .schedule-title
-        h3 After Party
+    include ./speakers/example-keynote/entry.jade
