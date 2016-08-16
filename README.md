@@ -15,9 +15,9 @@ Stay Tuned for announcements.
 Type         | About
 ------------ | -------------------------------------------------
 Lightning    | The first 30, these go fast!
-Thunder      | Through Aug 31
-Regular Pass | Through Nov 2nd
-Herd         | This is for groups larger than 5, through Nov 2nd
+Thunder      | Through Aug 25
+Stormfront   | Through Nov 3rd
+Cluster      | This is for groups larger than 5, through Nov 3rd
 
 Tickets include food/snacks/non-alcoholic drinks at lunch time snack break and at the optional after party. (After party attendance is completely optional and not required.)
 
