@@ -23,7 +23,7 @@
     "hexo-tag-googlemaps": "*"
   },
   "hexo": {
-    "version": "3.2.0"
+    "version": "3.2.2"
   },
   "devDependencies": {
     "hexo-broken-link-checker": "1.x.x"
