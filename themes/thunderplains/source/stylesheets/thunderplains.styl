@@ -270,6 +270,7 @@ header
       &.speakers-topics-api
         margin-left: 16.6%
 #schedule
+
   .schedule-legend
     margin: 0 0 10px
     @media only screen and (min-width: $break-medium)
@@ -351,12 +352,14 @@ header
       .schedule-talk
         border: none
         padding: 0 10px
+
         .schedule-title
           h3
             font-size: 25px
             margin-top: 10px
           h4
             font-size: 20px
+
 
     .schedule-talk
       cursor: pointer
@@ -393,6 +396,9 @@ header
           height: 105px
 .schedule-talk
   .schedule-title
+    display block
+    float left
+    width 100%
     h3
       font-size: 20px
       color: $purple-dark
@@ -402,6 +408,10 @@ header
       color: $green-light
       font-weight: 300
       margin-bottom: 7px
+    .speaker-bullet
+      display: none
+
+
 
   .nav-tabs
     //margin-top: -8px;
@@ -448,6 +458,33 @@ header
       h4
         margin-top: 7px
         font-size: 14px
+      .speaker-bullet
+        float left
+      .speaker-bullet
+        width: 100%
+        color #666
+        cursor: pointer
+        display: block
+        font-size: 14px
+        .fa
+          cursor: pointer
+          width 26px
+          height: 26px
+          float: left
+          font-size: 26px
+          margin: 7px 7px 7px 0;
+        label
+          cursor: pointer
+          display inline-block
+          line-height 26px
+          margin: 2px
+      &:hover
+        color $purple-dark
+        label
+          color $purple-dark
+        .fa
+          color $purple-dark
+
       @media screen and (min-width: 480px)
         min-height: 150px
         padding-right: 160px
@@ -465,7 +502,7 @@ header
           margin-top: 11px
           font-size: 22px
       @media screen and (min-width: 720px)
-        min-height: 205px
+        min-height: 220px
         padding-right: 210px
         h3
           font-size: 34px
@@ -590,25 +627,6 @@ header
     @media only screen and (min-width: $break-small)
       .row
         margin-bottom: 1em
-    .sponsor
-      img
-        max-width: 250px
-      @media only screen and (max-width: $break-small)
-        margin-bottom: 20px
-      .logo-innotech
-        text-replace("../images/logo-innotech.png", 152px, 90px)
-      // +logo-sponsor(brightbit, 10px)
-      // +logo-sponsor(sst, 18px, 230px, 58px)
-      // +logo-sponsor(swagexpert, 10px)
-      // +logo-sponsor(github, 6px)
-      // +logo-sponsor(twitter, 7px)
-      // +logo-sponsor(twilio, 7px)
-      // +logo-sponsor(mozilla, 4px)
-      // +logo-sponsor(bocoup)
-      // +logo-sponsor(roberthalf, 28px)
-      // +logo-sponsor(telogicalsystems, 0, 155px, 84px)
-      // +logo-sponsor(projekt202, 24px)
-      // +logo-sponsor(huboard, 16px)
   a
     color: #aaaaaa
     font-size: 20px
@@ -689,12 +707,6 @@ footer
     display: inline-block
     vertical-align: middle
     float: none
-  img
-    max-width: 250px
-.sponsor
-  img
-    max-width: 250px
-
 
 
 .cfp
