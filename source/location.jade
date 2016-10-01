@@ -3,4 +3,21 @@ p
   | Located at the
   a(href="http://boathousedistrict.org/boathouse-district-about/devon-boathouse/") Devon Boathouse
   |  in downtown Oklahoma City
-iframe(width='100%', height='400px', frameBorder='0',  src='https://a.tiles.mapbox.com/v4/techlahoma.06k737jl/attribution,zoompan.html?access_token=pk.eyJ1IjoidGVjaGxhaG9tYSIsImEiOiJjaW9oeWU4bG4wMXMydWRtM2s5b2VhYXdrIn0.VS6-30R9qziwYmWs_oPqdA', id='map')
+  
+p.container
+  div.col-md-8
+    div#location-panorama
+      a(href='http://boathousedistrict.org/boathouse-district-about/devon-boathouse/', alt='The Devon Boathouse').location-image-overlay.one
+        div.location-image-overlay-label
+          | The Devon Boathouse
+      div#location-panorama-image.location-image
+      img(src='images/devin-boathouse-panorama-web.png', alt='The Devon Boathouse', title="The Devon Boathouse")#location-panorama-image-src.location-image-src
+  div.col-md-4
+    div#location-parking
+      a(href='http://boathousedistrict.org/festivals-races/riversport-rapids-grand-opening/parking/', alt='Parking and Directions').location-image-overlay.two
+        div.location-image-overlay-label
+          | Parking and Directions
+      div#location-parking-image.location-image
+      img(src='images/devin-boathouse-parking-web.png', alt='Parking and Directions' , title="Parking and Direcctions" )#location-parking-image-src.location-image-src 
+div
+  iframe(width='100%', height='400px', frameBorder='0',  src='https://a.tiles.mapbox.com/v4/techlahoma.06k737jl/attribution,zoompan.html?access_token=pk.eyJ1IjoidGVjaGxhaG9tYSIsImEiOiJjaW9oeWU4bG4wMXMydWRtM2s5b2VhYXdrIn0.VS6-30R9qziwYmWs_oPqdA', id='map')
