@@ -7,7 +7,11 @@ function thunderplains() {
   initTabs();
   initSmoothScroll();
   initRoomColumnHover();
+}
 
+
+function thunderplainsWindowLoad(){
+    equalizeLocationImages();
 }
 
 function initTabs() {
@@ -28,12 +32,15 @@ function equalizeLocationImages(){
   var panoramaHeight = $locationPanorama.height();
   var parkingHeight = $locationParking.height();
 
-  if(panoramaHeight < 150){
-    panoramaHeight = 150;
+  var min = 175;
+  var max = 550;
+
+  if(panoramaHeight < min){
+    panoramaHeight = min;
   }
 
-  if(panoramaHeight > 500){
-    panoramaHeight = 500;
+  if(panoramaHeight > max){
+    panoramaHeight = max;
   }
 
   $locationParking.height(panoramaHeight);
