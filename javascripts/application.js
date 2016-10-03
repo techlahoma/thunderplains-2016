@@ -1,15 +1,59 @@
-$(function() {
+
+
+
+function thunderplains() {
+  equalizeLocationImages();
   initModals();
   initTabs();
   initSmoothScroll();
   initRoomColumnHover();
-});
+}
 
+
+function thunderplainsWindowLoad(){
+    equalizeLocationImages();
+}
 
 function initTabs() {
 
 
 
+}
+
+
+function equalizeLocationImages(){
+  var $locationPanorama = $('#location-panorama');
+  var $locationParking = $('#location-parking');
+  var $locationParkingImg = $('#location-parking-image');
+  var $locationPanoramaImg = $('#location-panorama-image');
+  var $locationPanoramaSrc = $('#location-panorama-image-src');
+  var $locationParkingSrc = $('#location-parking-image-src');
+
+  var panoramaHeight = $locationPanorama.height();
+  var parkingHeight = $locationParking.height();
+
+  var min = 175;
+  var max = 550;
+
+  if(panoramaHeight < min){
+    panoramaHeight = min;
+  }
+
+  if(panoramaHeight > max){
+    panoramaHeight = max;
+  }
+
+  $locationParking.height(panoramaHeight);
+  $locationPanorama.height(panoramaHeight);
+
+
+  $locationPanoramaImg.css({
+    'background-image' : 'url(' + $locationPanoramaSrc.attr('src') + ')'
+  })
+
+  $locationParkingImg.css({
+    'background-image' : 'url('+ $locationParkingSrc.attr('src') + ')'
+  })
 
 }
 
@@ -28,7 +72,6 @@ function initSmoothScroll() {
       }
     }
   });
-
 }
 
 function initModals() {
@@ -106,3 +149,6 @@ function initRoomColumnHover() {
     attachHandlers(rooms[i]);
   }
 }
+
+
+$(document).ready(thunderplains);
