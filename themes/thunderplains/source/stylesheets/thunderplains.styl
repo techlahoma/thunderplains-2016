@@ -386,7 +386,7 @@ header
             text-shadow: $hoverTextShadow
       &.no-modal
         cursor: default
-      img, ul, p, .modal-social
+      img, ul, p, .modal-social, .panel-bio
         display: none
     @media only screen and (min-width: $break-medium)
       .schedule-slot
@@ -410,7 +410,6 @@ header
       margin-bottom: 7px
     .speaker-bullet
       display: none
-
 
 
   .nav-tabs
@@ -514,10 +513,32 @@ header
        text-align: justify;
 
 
+/* Panel overrides */
+.panel-bio
+  clear: both;
+  margin-bottom: 20px;
+  overflow: auto;
 
+.panel-title
+  min-height: auto;
 
+img.panel-bio__image
+  width: 20%;
+  height: 20%;
+  position: relative;
+  top: auto;
+  right: auto;
+  float: right;
+  margin-left: 15px;
 
+.panel-bio
+  p
+    clear: none;
 
+.modal .panel-bio p
+  text-align: left;
+
+/* /Panel overrides */
 
 #passes
   .passes-list
