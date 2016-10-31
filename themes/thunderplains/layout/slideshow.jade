@@ -1,0 +1,9 @@
+doctype html
+block vars
+  - var bodyclass = 'slideshow';
+html(lang='en')
+  head
+    include _partial/head
+  body(class=bodyclass)#js-slideshow
+    block content
+    != page.content
