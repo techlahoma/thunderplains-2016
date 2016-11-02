@@ -4,106 +4,19 @@ layout: slideshow
 ---
 
 section#sponsors-bronze.slide
-  h2.slide__title Bronze Sponsors
-  .slide__content
-    .col-md-4
-      a(href="https://www.roberthalf.com/")
-        img(alt="Robert-Half Technology" src="images/sponsors/robert-half.jpg")
-    .col-md-4
-      a(href="http://skywise.wdtinc.com")
-        img(alt="WDT Skywise APIs" src="images/sponsors/skywise-horizontal.png")
-    .col-md-4
-      a(href="https://www.remarq.io/")
-        img(alt="Remarq.io" src="images/sponsors/remarq.png")
+  include slides/bronze-sponsors.jade
 
 section#sponsors-silver.slide
-  h2.slide__title Silver Sponsors
-  .slide__content
-    .col-md-4
-      a(href="https://www.dynatrace.com/")
-        img(alt="DynaTrace" src="images/sponsors/dynatrace.png")
-    .col-md-4
-      a(href="http://www.mobiletappestry.com/")
-        img(alt="Mobile tAPPestry" src="images/sponsors/mobiletappestry.png")
-    .col-md-4
-      a(href="https://www.ok.gov/ocast/")
-        img(alt="OCAST" src="images/sponsors/ocast.png")
+  include slides/silver-sponsors.jade
 
 section#gold-sponsor-simple.slide
-  h2.slide__title Gold Sponsor
-  .slide__content
-    .col-md-6
-      a(href="https://www.simple.com/")
-        img(alt="Simple - Online Banking" src="images/sponsors/simple-logo.png")
+  include slides/gold-sponsor-simple.jade
 
 section#t-shirt-sponsor-compose.slide
-  h2.slide__title T-Shirt Sponsor
-  .slide__content
-    .col-md-6
-      a(href="https://www.compose.com/")
-        img(alt="Compose - Cloud Hosted Databases" src="images/sponsors/compose.png")
+  include slides/t-shirt-sponsor.jade
 
 section#afterparty-sponsor.slide
-  h2.slide__title Afterparty Sponsor
-  .slide__content
-    a(href="https://rollbar.com/")
-      img(alt="Rollbar - Full-stack error tracking" src="images/sponsors/rollbar.png")
+  include slides/afterparty-sponsor.jade
 
 section#schedule.slide.active
-  h2.slide__title Schedule
-  .schedule-list
-    .schedule-time
-      time 7:30am-9:00am
-    .schedule-event
-      p
-        | Registration
-    .schedule-time
-      time 9:00am-9:30am
-    .schedule-event
-      p
-        | Opening Announcements
-    .schedule-time
-      time 9:30am-10:30am
-    .schedule-slot
-        include ./speakers/women-in-tech/entry.jade
-    .schedule-time
-      time 10:30am-11:30am
-    .schedule-slot
-      include ./speakers/frank-d-evans/entry.jade
-    .schedule-time
-      time 11:30am-1:00pm
-    .schedule-event
-      p
-        | Lunch Break
-    .schedule-time
-      time 1:00pm-2:00pm
-    .schedule-slot
-      include ./speakers/luke-crouch/entry.jade
-    .schedule-time
-      time 2:00pm-3:00pm
-    .schedule-slot
-      include ./speakers/rob-carr/entry.jade
-    .schedule-time
-      time 3:00pm-4:00pm
-    .schedule-event
-      p
-        | Break
-    .schedule-time
-      time 4:00pm-5:00pm
-    .schedule-slot
-      include ./speakers/ben-ilegbodu/entry.jade
-    .schedule-time
-      time 5:00pm-6:00pm
-    .schedule-slot
-      include ./speakers/lon-ingram/entry.jade
-    .schedule-time
-      time 6:00pm-7:30pm
-    .schedule-event
-      p
-        | Break
-    .schedule-time
-      time 7:30pm - ?
-    .schedule-slot
-      .schedule-talk.schedule-day1
-        .schedule-title
-          h3 Speaker Dinner
+  include slides/day-one-schedule.jade
