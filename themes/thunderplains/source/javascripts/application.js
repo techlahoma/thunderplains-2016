@@ -7,6 +7,7 @@ function thunderplains() {
   initTabs();
   initSmoothScroll();
   initRoomColumnHover();
+  initSlideshow();
 }
 
 
@@ -148,6 +149,25 @@ function initRoomColumnHover() {
   for (var i = 0, ii = rooms.length; i < ii; i++) {
     attachHandlers(rooms[i]);
   }
+}
+
+function initSlideshow() {
+  var SLIDE_DURATION = 10000;
+  var active_index = 0;
+  var $slides = $('#js-slideshow>section');
+
+  function changeSlides() {
+    if (active_index >= $slides.length) {
+      active_index = 0;
+    }
+
+    $slides
+      .removeClass('active')
+      .eq(active_index++)
+      .addClass('active');
+  }
+
+  setInterval(changeSlides, SLIDE_DURATION);
 }
 
 
